@@ -60,17 +60,21 @@ export default function App() {
               </h2>
               <div className="message-text">
                 <p>
-                  Just like this flower blooms with beauty and grace, you bring
-                  color and joy to every moment of my life.
+                  So Hello to my beautiful baby! I know na hindi talaga me expressive
+                  in some ways or what and most of the time e busy talaga ako tapos
+                  yung nangyari e bukas my girl my girl na ang iba and medyo common na 
+                  yung pagstory lang so I used my profession ande made a way. 
                 </p>
                 <p>
-                  Every day with you feels like a dream come true. Your smile
-                  brightens even the darkest days, and your laughter is the
-                  sweetest melody I've ever heard.
+                  Sumabay ako sa uso but that doesn't mean it only applies to this day,
+                  you know how much I like and I appreciate you, you changed me into better
+                  and right man. You made me feel how amazing it is to be love by you, and I
+                  want to see more of us so stay with me talaga, dapat lang uy hahahahaha.
                 </p>
                 <p>
-                  Thank you for being you—for your kindness, your strength, your
-                  beautiful heart, and for choosing to share your life with me.
+                  Thank you for appreciating me baby and thank you for coming into my life,
+                  Thank you for understanding with my busy times, with my unhealthy lifestyle
+                  Thank you so much baby!
                 </p>
                 <p>
                   You inspire me to be better, to dream bigger, and to love
@@ -78,7 +82,8 @@ export default function App() {
                 </p>
               </div>
               <p className="closing-text">
-                I love you more than words can express! ❤️
+                I'll take this opportunity to say this
+                I love you Jamila❤️
               </p>
             </div>
           </div>
