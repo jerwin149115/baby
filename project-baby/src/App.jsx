@@ -83,6 +83,8 @@ export default function App() {
               </div>
               <p className="closing-text">
                 I'll take this opportunity to say this
+              </p>
+              <p className="closing-text">
                 I love you Jamila❤️
               </p>
             </div>
