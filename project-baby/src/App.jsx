@@ -56,7 +56,7 @@ export default function App() {
                   className="message-image"
                   onError={(e) => {
                     e.target.src =
-                      "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=400&h=400&fit=crop";
+                      "./src/assets/photo_2025-09-29_20-12-12.jpg";
                   }}
                 />
               </div>
