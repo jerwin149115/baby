@@ -1,11 +1,9 @@
 import { useState } from "react";
 import "./App.css";
+import myPhoto from "./assets/photo_2025-09-29_20-12-12.jpg"; // ✅ import your image
 
 export default function App() {
   const [showMessage, setShowMessage] = useState(false);
-  const [imageUrl, setImageUrl] = useState(
-    "./src/assets/photo_2025-09-29_20-12-12.jpg"
-  );
 
   return (
     <div className="app-container">
@@ -14,6 +12,7 @@ export default function App() {
           onClick={() => setShowMessage(!showMessage)}
           className="flower-clickable"
         >
+          {/* SVG Flower */}
           <svg
             width="200"
             height="200"
@@ -21,14 +20,14 @@ export default function App() {
             className="flower-svg"
           >
             {/* Petals */}
-            <ellipse cx="100" cy="60" rx="25" ry="40" fill="#ff69b4" className="pulse delay-0" />
-            <ellipse cx="140" cy="100" rx="40" ry="25" fill="#ff1493" className="pulse delay-1" />
-            <ellipse cx="100" cy="140" rx="25" ry="40" fill="#ff69b4" className="pulse delay-2" />
-            <ellipse cx="60" cy="100" rx="40" ry="25" fill="#ff1493" className="pulse delay-3" />
-            <ellipse cx="130" cy="70" rx="30" ry="35" fill="#ffb6c1" className="pulse delay-4" />
-            <ellipse cx="130" cy="130" rx="30" ry="35" fill="#ffb6c1" className="pulse delay-5" />
-            <ellipse cx="70" cy="130" rx="30" ry="35" fill="#ffb6c1" className="pulse delay-6" />
-            <ellipse cx="70" cy="70" rx="30" ry="35" fill="#ffb6c1" className="pulse delay-7" />
+            <ellipse cx="100" cy="60" rx="25" ry="40" fill="#ff69b4" />
+            <ellipse cx="140" cy="100" rx="40" ry="25" fill="#ff1493" />
+            <ellipse cx="100" cy="140" rx="25" ry="40" fill="#ff69b4" />
+            <ellipse cx="60" cy="100" rx="40" ry="25" fill="#ff1493" />
+            <ellipse cx="130" cy="70" rx="30" ry="35" fill="#ffb6c1" />
+            <ellipse cx="130" cy="130" rx="30" ry="35" fill="#ffb6c1" />
+            <ellipse cx="70" cy="130" rx="30" ry="35" fill="#ffb6c1" />
+            <ellipse cx="70" cy="70" rx="30" ry="35" fill="#ffb6c1" />
 
             {/* Center */}
             <circle cx="100" cy="100" r="25" fill="#ffd700" />
@@ -48,25 +47,21 @@ export default function App() {
         {showMessage && (
           <div className="message-box fadeIn">
             <div className="message-content">
-              {/* Image */}
               <div className="image-wrapper">
                 <img
-                  src={imageUrl}
+                  src={myPhoto} // ✅ use imported photo
                   alt="Special moment"
                   className="message-image"
-                  onError={(e) => {
-                    e.target.src =
-                      "./src/assets/photo_2025-09-29_20-12-12.jpg";
-                  }}
                 />
               </div>
 
-              <h2 className="message-title">To My Beautiful Soon to be Girlfriend 💕</h2>
+              <h2 className="message-title">
+                To My Beautiful Soon to be Girlfriend 💕
+              </h2>
               <div className="message-text">
                 <p>
                   Just like this flower blooms with beauty and grace, you bring
-                  color and joy to every moment of my life. You are my sunshine,
-                  my happiness, and my everything.
+                  color and joy to every moment of my life.
                 </p>
                 <p>
                   Every day with you feels like a dream come true. Your smile
@@ -76,12 +71,10 @@ export default function App() {
                 <p>
                   Thank you for being you—for your kindness, your strength, your
                   beautiful heart, and for choosing to share your life with me.
-                  I am so grateful for every moment we spend together.
                 </p>
                 <p>
                   You inspire me to be better, to dream bigger, and to love
-                  deeper. With you by my side, I feel like I can conquer the
-                  world.
+                  deeper.
                 </p>
               </div>
               <p className="closing-text">
